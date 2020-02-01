@@ -1080,6 +1080,16 @@
     <!-- Cleanup unused fingerprints -->
     <bool name="config_cleanupUnusedFingerprints">false</bool>
 
+    <!-- Paths to the libraries that contain device specific key handlers -->
+    <string-array name="config_deviceKeyHandlerLibs" translatable="false">
+        <item>/system/priv-app/RealmeParts/RealmeParts.apk</item>
+    </string-array>
+
+    <!-- Names of the key handler classes -->
+    <string-array name="config_deviceKeyHandlerClasses" translatable="false">
+        <item>com.realmeparts.settings.touch.TouchKeyHandler</item>
+    </string-array>
+
     <!-- Whether device ignores the RSSNR signal implementation -->
     <bool name="config_ignoreRssnrSignalLevel">true</bool>
 
