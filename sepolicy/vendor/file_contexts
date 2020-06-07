@@ -47,6 +47,11 @@
 # Neural Networks Hal
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti                                 u:object_r:hal_neuralnetworks_default_exec:s0
 
+# RealmeParts
+/sys/bus/platform/drivers/kcal_ctrl/kcal_ctrl.[0-2](/.*)?        u:object_r:kcal_sysfs:s0
+/sys/devices/platform/kcal_ctrl.[0-2](/.*)?                      u:object_r:kcal_sysfs:s0
+/sys/kernel/fast_charge/force_fast_charge                        u:object_r:sysfs_usb_fastcharge:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                                             u:object_r:persist_camera_file:s0
 
