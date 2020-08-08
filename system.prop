@@ -95,6 +95,7 @@ persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=0
 debug.hwui.renderer=skiavk
 debug.cpurend.vsync=false
+debug.performance.tuning=1
 
 # IMS
 persist.vendor.ims.disableUserAgent=0
