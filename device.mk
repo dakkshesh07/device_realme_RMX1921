@@ -161,11 +161,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.4-service.clearkey
 
-# Doze
-PRODUCT_PACKAGES += \
-    RealmeParts \
-    RealmeProximityHelper
-
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.realme_sdm710 \
@@ -385,6 +380,14 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
     $(LOCAL_PATH)/configs/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
+
+# RealmeParts
+PRODUCT_PACKAGES += \
+    RealmeParts \
+    RealmeProximityHelper
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-realmeparts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-realmeparts.xml
 
 # Radio
 PRODUCT_PACKAGES += \
