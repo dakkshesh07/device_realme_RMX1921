@@ -26,6 +26,12 @@ persist.oppo.camera.                 u:object_r:vendor_camera_prop:s0
 # Radio props
 gsm.operator.numeric              u:object_r:radio_prop:s0
 
+# Dirac
+persist.audio.dirac.eq                           u:object_r:dirac_prop:s0
+persist.audio.dirac.headset                      u:object_r:dirac_prop:s0
+persist.audio.dirac.music.state                  u:object_r:dirac_prop:s0
+persist.audio.dirac.speaker                      u:object_r:dirac_prop:s0
+
 # Oppo debug props
 persist.ipe.debug                  u:object_r:oppo_debug_prop:s0
 persist.sys.oppo                  u:object_r:oppo_debug_prop:s0
