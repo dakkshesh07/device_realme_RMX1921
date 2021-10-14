@@ -386,9 +386,6 @@ PRODUCT_PACKAGES += \
     RealmeParts \
     RealmeProximityHelper
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/privapp-permissions-realmeparts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-realmeparts.xml
-
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5 \
@@ -400,7 +397,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.qcom \
     init.class_main.sh \
-    init.realmeparts.rc \
     init.oppo.reserve.rc \
     init.msm.usb.configfs.rc \
     init.oppo.fingerprints.sh \
