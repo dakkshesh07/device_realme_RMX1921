@@ -43,6 +43,9 @@ persist.data.profile_update=true
 persist.data.wda.enable=true 
 persist.rmnet.data.enable=true
 
+# Disable blur on app-launch
+ro.launcher.blur.appLaunch=0
+
 # Display - oppo
 persist.sys.enable.rc=1
 ro.display.rc.size=108,108,111,111
