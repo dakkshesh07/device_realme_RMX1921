@@ -20,6 +20,7 @@
     <!-- the padding on the start and the end of the statusbar -->
     <dimen name="status_bar_extra_padding">13dp</dimen>
 
+    <!-- the padding of the rounded corner -->
     <dimen name="rounded_corner_content_padding">50.0px</dimen>
 
     <!-- Bottom margin size when fingerprint in display is active -->
@@ -28,4 +29,6 @@
     <!-- Udfps animation -->
     <dimen name="udfps_animation_offset">6dp</dimen>
 
+    <!-- Location on the screen of the center of the physical power button. -->
+    <dimen name="physical_power_button_center_screen_location_y">880px</dimen>
 </resources>
