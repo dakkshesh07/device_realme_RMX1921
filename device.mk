@@ -415,6 +415,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/qcom/display \
     hardware/qcom/media \
     vendor/qcom/opensource/audio-hal/primary-hal \
+    vendor/qcom/opensource/data-ipa-cfg-mgr \
     hardware/google/pixel \
     hardware/nxp
 
