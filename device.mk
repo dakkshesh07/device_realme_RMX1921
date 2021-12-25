@@ -201,9 +201,9 @@ PRODUCT_BOARD_PLATFORM := sdm845
 PRODUCT_USES_QCOM_HARDWARE := true
 
 # HALS
-SRC_AUDIO_HAL_DIR := hardware/qcom-caf/sdm845/audio
-SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/sdm845/display
-SRC_MEDIA_HAL_DIR := hardware/qcom-caf/sdm845/media
+SRC_AUDIO_HAL_DIR := vendor/qcom/opensource/audio-hal/primary-hal
+SRC_DISPLAY_HAL_DIR := hardware/qcom/display
+SRC_MEDIA_HAL_DIR := hardware/qcom/media
 
 # Health
 PRODUCT_PACKAGES += \
@@ -412,7 +412,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     kernel/realme/RMX1921 \
-    hardware/qcom-caf/sdm845 \
+    hardware/qcom/display \
+    hardware/qcom/media \
+    vendor/qcom/opensource/audio-hal/primary-hal \
     hardware/google/pixel \
     hardware/nxp
 
