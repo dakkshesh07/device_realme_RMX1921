@@ -50,17 +50,24 @@ TARGET_NO_BOOTLOADER := true
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 earlycon=msm_geni_serial,0xA90000 androidboot.hardware=qcom androidboot.console=ttyMSM0 msm_rtb.filter=0x237 ehci-hcd.park=3 lpm_levels.sleep_disabled=1 service_locator.enable=1 androidboot.configfs=true androidboot.usbcontroller=a600000.dwc3 swiotlb=1 loop.max_part=7 kpti=off
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
+
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/kernel-pb/Image.gz-dtb
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 BOARD_KERNEL_PAGESIZE := 4096
 TARGET_KERNEL_ARCH := arm64
-TARGET_KERNEL_SOURCE := kernel/realme/RMX1921
-TARGET_KERNEL_CONFIG := RMX1921_defconfig
-
-TARGET_KERNEL_CLANG_COMPILE := true
-KERNEL_CUSTOM_LLVM := neutron
-KERNEL_LD := LD=ld.lld
-TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
-TARGET_KERNEL_ADDITIONAL_FLAGS += AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf STRIP=llvm-strip
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+    TARGET_KERNEL_SOURCE := kernel/realme/RMX1921
+    TARGET_KERNEL_CONFIG := RMX1921_defconfig
+    TARGET_KERNEL_CLANG_COMPILE := true
+    KERNEL_CUSTOM_LLVM := neutron
+    KERNEL_LD := LD=ld.lld
+    TARGET_KERNEL_ADDITIONAL_FLAGS += HOSTCFLAGS="-fuse-ld=lld -Wno-unused-command-line-argument"
+    TARGET_KERNEL_ADDITIONAL_FLAGS += AR=llvm-ar NM=llvm-nm OBJCOPY=llvm-objcopy OBJDUMP=llvm-objdump OBJSIZE=llvm-size READELF=llvm-readelf STRIP=llvm-strip
+endif
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm710

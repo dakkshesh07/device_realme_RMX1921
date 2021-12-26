@@ -1,0 +1,1 @@
+cmd_usr/include/xen/.install := /bin/sh ../scripts/headers_install.sh ./usr/include/xen ../include/uapi/xen evtchn.h gntalloc.h gntdev.h privcmd.h; /bin/sh ../scripts/headers_install.sh ./usr/include/xen ./include/generated/uapi/xen ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > ./usr/include/xen/$$F; done; touch usr/include/xen/.install

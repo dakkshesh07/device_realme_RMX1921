@@ -1,0 +1,1 @@
+cmd_usr/include/misc/.install := /bin/sh ../scripts/headers_install.sh ./usr/include/misc ../include/uapi/misc cxl.h; /bin/sh ../scripts/headers_install.sh ./usr/include/misc ./include/generated/uapi/misc ; for F in ; do echo "$(pound)include <asm-generic/$$F>" > ./usr/include/misc/$$F; done; touch usr/include/misc/.install
