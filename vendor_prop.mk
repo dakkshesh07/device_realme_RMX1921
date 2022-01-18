@@ -146,7 +146,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.vendor.extension_library=libqti-perfd-client.so
+    ro.vendor.extension_library=libqti-perfd-client.so \
+    ro.vendor.perf.scroll_opt=true
 
 # SoC
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
