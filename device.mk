@@ -459,14 +459,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     QuickAccessWallet
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libnl \
-    libwfdaac_vendor
-
-#PRODUCT_BOOT_JARS += \
-#    WfdCommon
-
 # Wlan
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \

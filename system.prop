@@ -52,7 +52,6 @@ ro.display.underscreenfingerprint=1
 ro.display.underscreen.lightsensor.support=1
 ro.lcd.display.screen.underlightsensor.region=624,28,672,76
 ro.display.underscreen.lightsensor.screenshot.period=50
-persist.debug.wfd.enable=1
 ro.oppo.screen.heteromorphism=444,0:636,76
 
 # Dex
