@@ -99,11 +99,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PRODUCT_PROPERTIES += \
    persist.vendor.cne.feature=1
 
-# Codec2
-PRODUCT_PROPERTY_OVERRIDES += \
-   debug.stagefright.omx_default_rank.sw-audio=1 \
-   debug.stagefright.omx_default_rank=0
-
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.enable_default_color_mode=1 \
