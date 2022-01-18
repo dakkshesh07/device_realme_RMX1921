@@ -126,7 +126,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Graphics
 PRODUCT_PROPERTY_OVERRIDES += \
-    debug.egl.hw=0 \
+    debug.egl.hw=1 \
     debug.sf.hw=1 \
     debug.sdm.support_writeback=0 \
     ro.opengles.version=196610 \
