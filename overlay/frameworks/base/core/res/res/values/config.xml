@@ -1289,4 +1289,7 @@
     <!-- How long it takes for the HW to start illuminating after the illumination is requested. -->
     <integer name="config_udfps_illumination_transition_ms">0</integer>
 
+    <!-- Do not translate. Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Realme XT</string>
+
 </resources>
