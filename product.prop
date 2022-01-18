@@ -7,6 +7,9 @@ ro.lmk.upgrade_pressure=100
 ro.lmk.downgrade_pressure=100
 ro.lmk.log_stats=false
 
+# Shutdown
+ro.build.shutdown_timeout=2
+
 # Seamless transfer
 sys.fflag.override.settings_seamless_transfer=true
 
