@@ -1055,6 +1055,15 @@
     <!-- Radius of the software rounded corners. -->
     <dimen name="rounded_corner_radius">116px</dimen>
 
+    <!-- Top adjustment for the software rounded corners since corners are not perfectly
+        round. This value is used when retrieving the "radius" of the rounded corner in cases
+        where the exact bezier curve cannot be retrieved. This value will be subtracted from
+        rounded_corner_radius to more accurately provide a "radius" for the rounded corners.-->
+    <dimen name="rounded_corner_radius_adjustment">8px</dimen>
+
+    <!-- Whether the display cutout region of the main built-in display should be forced to
+         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
+     -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
     <!-- Whether device supports double tap to wake -->
