@@ -34,7 +34,7 @@ on post-fs
     # Start services for bootanim
     start surfaceflinger
     start bootanim
-    start vendor.hwcomposer-2-1
+    start vendor.hwcomposer-2-3
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
