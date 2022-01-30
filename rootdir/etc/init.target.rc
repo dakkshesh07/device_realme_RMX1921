@@ -90,9 +90,6 @@ on post-fs-data
 #    mkdir /data/vendor/hbtp 0750 system system
 #endif
     mkdir /data/vendor/nnhal 0700 system system
-    #ifdef VENDOR_EDIT
-    mkdir /data/vendor/dolby 0770 media media
-    #endif /*VENDOR_EDIT*/
 
 # For cpusets initialize for Silver Only first and then Silver + Gold
 # Silver Only configuration cannot work with 0-7
